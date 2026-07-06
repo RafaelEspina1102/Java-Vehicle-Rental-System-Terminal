@@ -1,21 +1,21 @@
 
-# Java Vehicle Rental System Terminal
+# Java models.Vehicle Rental System Terminal
 
-A simple Terminal based Vehicle Rental System to learn more about Core Java
+A simple Terminal based models.Vehicle Rental System to learn more about Core Java
 
 ## Documentation
 
-*This part is where I put my thought process on creating the Vehicle Rental System*
+*This part is where I put my thought process on creating the models.Vehicle Rental System*
 
 What do I need in a vehicle rental system?
-- Customer
-- Vehicle (Car, Motorcycle, Truck)
+- models.Customer
+- models.Vehicle (models.Car, models.Motorcycle, models.Truck)
 - Rental System
-- Vehicle Manager
+- models.Vehicle manager
 
 What does the 4 do and need?
 
-**Customer**
+**models.Customer**
 - Name
 - License Number
 - Phone Number
@@ -23,24 +23,24 @@ What does the 4 do and need?
 - Return a vehicle
 
 **Rental System**
-- Customer
-- Vehicle
+- models.Customer
+- models.Vehicle
 - Date Rented
 - Date Returned
 - Cost
 
-**Vehicle**
+**models.Vehicle**
 - Plate number
 - Brand
 - Model
 - Year
 - Availability
 
-**Vehicle Manager**
-- Add Vehicle
-- Remove Vehicle
-- Find Vehicle
-- List Vehicle
+**models.Vehicle manager**
+- Add models.Vehicle
+- Remove models.Vehicle
+- Find models.Vehicle
+- List models.Vehicle
 
 
 
