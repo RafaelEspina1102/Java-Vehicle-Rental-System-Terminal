@@ -1,5 +1,22 @@
+import manager.UserManager;
+import models.Employee;
+import models.User;
+
 public class Main {
     static public void main(String[] args) {
-        System.out.println("Initialization");
+
+        UserManager userManager = new UserManager();
+        userManager.testing();
+
+        User currentUser;
+
+        currentUser = userManager.login("rozy", "123");
+        if (currentUser.getClass() == Employee.class) {
+            System.out.println(currentUser.getName());
+
+        }
+        else {
+            System.out.println("This is not an employee");
+        }
     }
 }
