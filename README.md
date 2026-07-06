@@ -18,19 +18,18 @@ A simple Terminal based models.Vehicle Rental System to learn more about Core Ja
 ### What do they do and need?
 
 **Customer**
-- Name
-- Username
-- Password
 - License Number
 - Phone Number
 - Rent a vehicle
 - Return a vehicle
 
 **Employee**
+- EmployeeID
+
+**User**
 - Name
 - Username
 - Password
-- EmployeeID
 
 **RentalManager**
 - models.Customer
