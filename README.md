@@ -8,8 +8,7 @@ A simple Terminal based models.Vehicle Rental System to learn more about Core Ja
 *This part is where I put my thought process on creating the models.Vehicle Rental System*
 
 ### What do I need in a vehicle rental system?
-- Customer
-- Employee
+- User (Employee and Customer)
 - Vehicle (models.Car, models.Motorcycle, models.Truck)
 - Rental Manager
 - Vehicle manager
