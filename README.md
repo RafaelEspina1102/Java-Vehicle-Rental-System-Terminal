@@ -30,6 +30,9 @@ A simple Terminal based models.Vehicle Rental System to learn more about Core Ja
 - Name
 - Username
 - Password
+- Get name
+- Get username
+- Get password
 
 **RentalManager**
 - models.Customer
