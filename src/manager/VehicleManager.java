@@ -59,7 +59,17 @@ public class VehicleManager {
     }
 
     public  void listTruck () {
-
+        for (Vehicle vehicle: vehicles) {
+            if (vehicle instanceof Truck truck) {
+                System.out.println("Brand: " + truck.getBrand());
+                System.out.println("Model: " + truck.getModel());
+                System.out.println("Year: " + truck.getYear());
+                System.out.println("Plate Number: " + truck.getPlateNumber());
+                System.out.println("Wheels: " + truck.getWheels());
+                System.out.println("Weight Limit: " + truck.getWeightLimit());
+                System.out.println("Available: " + truck.getAvailable());
+            }
+        }
     }
 
     public  void listCar () {

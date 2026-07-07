@@ -12,4 +12,12 @@ public class Truck extends Vehicle {
 
     }
 
+    public int getWheels () {
+        return wheels;
+    }
+
+    public int getWeightLimit () {
+        return weightLimit;
+    }
+
 }
