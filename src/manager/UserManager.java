@@ -44,5 +44,13 @@ public class UserManager {
 
     }
 
+    public boolean checkEmployee (User employee) {
+        return employee.getClass().equals(Employee.class);
+    }
+
+    public  boolean checkCustomer (User customer) {
+        return customer.getClass().equals(Customer.class);
+    }
+
 
 }

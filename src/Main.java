@@ -10,8 +10,8 @@ public class Main {
 
         User currentUser;
 
-        currentUser = userManager.login("rozy", "123");
-        if (currentUser.getClass() == Employee.class) {
+        currentUser = userManager.login("raffy", "123");
+        if (userManager.checkEmployee(currentUser)) {
             System.out.println(currentUser.getName());
 
         }

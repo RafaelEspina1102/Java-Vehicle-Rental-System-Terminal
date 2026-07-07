@@ -1,12 +1,37 @@
 package manager;
 
+import models.Car;
+import models.Motorcycle;
+import models.Truck;
+import models.Vehicle;
+
 import java.util.ArrayList;
 
 public class VehicleManager {
 
-    //ArrayList<Vehicle> vehicles = new ArrayList<>();
+    ArrayList<Vehicle> vehicles = new ArrayList<>();
 
-    void addVehicle (String plateNumber, String brand, String model, int year, boolean available) {
+    // Motorcycle
+    public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
+                     int engineSize, String motorcycleType) {
+        vehicles.add(new Motorcycle(plateNumber, brand, model, year,
+                available, engineSize, motorcycleType));
+
+    }
+
+    // Truck
+    public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
+                            int wheels, int weightLimit) {
+        vehicles.add(new Truck(plateNumber, brand, model, year,
+                available, wheels, weightLimit));
+
+    }
+
+    // Car
+    public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
+                            String carType) {
+        vehicles.add(new Car(plateNumber, brand, model, year,
+                available, carType));
 
     }
 
@@ -18,7 +43,26 @@ public class VehicleManager {
 
     }
 
-    void listVehicle () {
+
+    public void listMotorcycle () {
+        for (Vehicle vehicle: vehicles) {
+            if (vehicle instanceof Motorcycle motorcycle) {
+                System.out.println("Brand: " + motorcycle.getBrand());
+                System.out.println("Model: " + motorcycle.getModel());
+                System.out.println("Year: " + motorcycle.getYear());
+                System.out.println("Plate Number: " + motorcycle.getPlateNumber());
+                System.out.println("Engine Size: " + motorcycle.getEngineSize());
+                System.out.println("Motorcycle Type: " + motorcycle.getMotorcycleType());
+                System.out.println("Available: " + motorcycle.getAvailable());
+            }
+        }
+    }
+
+    public  void listTruck () {
+
+    }
+
+    public  void listCar () {
 
     }
 }

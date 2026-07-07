@@ -9,6 +9,14 @@ public class Customer extends  User{
         this.phoneNumber = phoneNumber;
     }
 
+    public String getLicenseNumber () {
+        return licenseNumber;
+    }
+
+    public String getPhoneNumber () {
+        return licenseNumber;
+    }
+
     public void rentAVehicle() {
 
     }
