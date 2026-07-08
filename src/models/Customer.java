@@ -17,7 +17,7 @@ public class Customer extends  User{
         return licenseNumber;
     }
 
-    public void rentAVehicle() {
+    public void rentAVehicle(Vehicle vehicle) {
 
     }
 

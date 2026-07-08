@@ -8,7 +8,7 @@ public class RentalManager {
     Customer customer;
     Vehicle vehicle;
     String dateRented, dateReturned;
-    double cost;
+    double totalCost;
 
 
 

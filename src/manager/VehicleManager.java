@@ -13,25 +13,25 @@ public class VehicleManager {
 
     // Motorcycle
     public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
-                     int engineSize, String motorcycleType) {
+                     int engineSize, String motorcycleType, int unitAmount, double price) {
         vehicles.add(new Motorcycle(plateNumber, brand, model, year,
-                available, engineSize, motorcycleType));
+                available, engineSize, motorcycleType, unitAmount, price));
 
     }
 
     // Truck
     public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
-                            int wheels, int weightLimit) {
+                            int wheels, int weightLimit, int unitAmount, double price) {
         vehicles.add(new Truck(plateNumber, brand, model, year,
-                available, wheels, weightLimit));
+                available, wheels, weightLimit, unitAmount, price));
 
     }
 
     // Car
     public void addVehicle (String plateNumber, String brand, String model, int year, boolean available,
-                            String carType) {
+                            String carType, int unitAmount, double price) {
         vehicles.add(new Car(plateNumber, brand, model, year,
-                available, carType));
+                available, carType, unitAmount, price));
 
     }
 
@@ -59,6 +59,8 @@ public class VehicleManager {
                 System.out.println("Plate Number: " + motorcycle.getPlateNumber());
                 System.out.println("Engine Size: " + motorcycle.getEngineSize());
                 System.out.println("Motorcycle Type: " + motorcycle.getMotorcycleType());
+                System.out.printf("Unit Amount: " + motorcycle.getUnitAmount());
+                System.out.printf("Price: " + motorcycle.getPrice());
                 System.out.println("Available: " + motorcycle.getAvailable());
             }
         }
@@ -73,6 +75,8 @@ public class VehicleManager {
                 System.out.println("Plate Number: " + truck.getPlateNumber());
                 System.out.println("Wheels: " + truck.getWheels());
                 System.out.println("Weight Limit: " + truck.getWeightLimit());
+                System.out.printf("Unit Amount: " + truck.getUnitAmount());
+                System.out.printf("Price: " + truck.getPrice());
                 System.out.println("Available: " + truck.getAvailable());
             }
         }
@@ -86,6 +90,9 @@ public class VehicleManager {
                 System.out.println("Year: " + car.getYear());
                 System.out.println("Plate Number: " + car.getPlateNumber());
                 System.out.printf("Car Type: " + car.getCarType());
+                System.out.printf("Unit Amount: " + car.getUnitAmount());
+                System.out.printf("Price: " + car.getPrice());
+                System.out.printf("Available: " + car.getAvailable());
             }
         }
     }

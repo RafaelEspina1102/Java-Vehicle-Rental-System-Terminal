@@ -6,8 +6,9 @@ public class Motorcycle extends Vehicle {
     private String motorcycleType;
 
     public Motorcycle (String plateNumber, String brand, String model,
-                       int year, boolean available, int engineSize, String motorcycleType) {
-        super(plateNumber, brand, model, year, available);
+                       int year, boolean available, int engineSize, String motorcycleType,
+                       int unitAmount, double price) {
+        super(plateNumber, brand, model, year, available, unitAmount, price);
         this.engineSize = engineSize;
         this. motorcycleType = motorcycleType;
 
