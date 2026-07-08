@@ -2,16 +2,19 @@ package models;
 
 public class Vehicle {
     String plateNumber, brand, model;
-    int year;
+    int year, unitAmount;
+    double price;
     boolean available;
 
     public Vehicle (String plateNumber, String brand, String model,
-                    int year, boolean available) {
+                    int year, boolean available, int unitAmount, double price) {
         this.plateNumber = plateNumber;
         this.brand = brand;
         this.model = model;
         this.year = year;
         this.available = available;
+        this.unitAmount = unitAmount;
+        this.price = price;
     }
 
     public String getBrand() {
@@ -32,5 +35,13 @@ public class Vehicle {
 
     public boolean getAvailable () {
         return available;
+    }
+
+    public  int getUnitAmount () {
+        return unitAmount;
+    }
+
+    public  double getPrice () {
+        return price;
     }
 }

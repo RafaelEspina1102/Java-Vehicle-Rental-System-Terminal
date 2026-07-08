@@ -11,4 +11,8 @@ public class Car extends Vehicle {
 
     }
 
+    public String getCarType () {
+        return carType;
+    }
+
 }

@@ -39,8 +39,14 @@ public class VehicleManager {
 
     }
 
-    void findVehicle () {
+    public Vehicle findVehicle (Vehicle vehicle) {
+        for (Vehicle vehicle1: vehicles) {
+            if (vehicle1.equals(vehicle)) {
+                return vehicle;
+            }
+        }
 
+        return null;
     }
 
 
@@ -73,6 +79,14 @@ public class VehicleManager {
     }
 
     public  void listCar () {
-
+        for (Vehicle vehicle: vehicles) {
+            if (vehicle instanceof Car car) {
+                System.out.println("Brand: " + car.getBrand());
+                System.out.println("Model: " + car.getModel());
+                System.out.println("Year: " + car.getYear());
+                System.out.println("Plate Number: " + car.getPlateNumber());
+                System.out.printf("Car Type: " + car.getCarType());
+            }
+        }
     }
 }

@@ -10,4 +10,7 @@ public class RentalManager {
     String dateRented, dateReturned;
     double cost;
 
+
+
+
 }

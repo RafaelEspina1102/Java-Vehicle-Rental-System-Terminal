@@ -45,11 +45,11 @@ public class UserManager {
     }
 
     public boolean checkEmployee (User employee) {
-        return employee.getClass().equals(Employee.class);
+        return employee instanceof Employee;
     }
 
     public  boolean checkCustomer (User customer) {
-        return customer.getClass().equals(Customer.class);
+        return customer instanceof Customer;
     }
 
 
